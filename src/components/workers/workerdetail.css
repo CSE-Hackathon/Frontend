@@ -1,0 +1,97 @@
+.orderDetailCard{
+    width: 90%;
+    height: 100%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cd{
+   
+    width: 50%;
+    height: 70%;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom,#1A237E,#9575CD);
+    box-shadow: 2px 2px 2px 2px black;
+    color: white;
+    
+    
+}
+
+.cd > div{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.tt{
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Slab';
+    font-size: 22px !important;
+}
+
+.itemd{
+    display: flex;
+    flex-direction: row;
+}
+
+.dispatchBtn{
+    display: flex;
+    justify-content: center;
+}
+
+.dispatchBtn > button{
+    display: flex;
+    justify-content: center;
+    width:20%;
+    background: black;
+    opacity: 0.6;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px black;
+    outline: none;
+    padding: 0.3rem;
+    color: white !important;
+}
+
+
+@media screen and (max-width:870px){
+
+    .tt{
+        display: flex;
+        justify-content: center;
+        font-family: 'Roboto Slab';
+        font-size: 16px !important;
+    }
+
+
+.cd{
+   
+    width: 70% !important;
+    height: 90% !important ;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom,#1A237E,#9575CD);
+    box-shadow: 2px 2px 2px 2px black;
+    color: white;
+    
+    
+}
+
+.orderDetailCard{
+    width: 90%;
+    height: 100%;
+    margin-top: 2rem;
+    margin-left: 0.3rem !important;
+    display: flex;
+    justify-content: center;
+}
+
+.cd > div{
+    margin-top: 0.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+}

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.outer-box{
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.leftBar{
+    width: 16%;
+    height: 100%;
+    background: linear-gradient(to right, #1A237E,#9575CD);
+    display: flex;
+    flex-direction: column;
+}
+
+.mainArea{
+    width: 84%;
+    height: 100%;
+    background:white;
+    display: flex;
+    flex-direction: column;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+    color: white;
+    font-family: 'Roboto Slab';
+    
+}
+
+.name > h3{
+    cursor: pointer;
+    transition: 3s ease-in-out;
+    font-size: 30px;
+}
+
+.dashboardBtn, .ordersBtn, .Signout{
+    display: flex;
+    margin-left: 5%;
+   
+    justify-content: center;
+    width: 90%;
+    margin-top: 2rem;
+    color: white;
+    font-family: 'Roboto Slab';
+    
+    
+}
+
+.dashboardBtn > .h, .ordersBtn> .h, .Signout>.h{
+    cursor: pointer;
+    transition: 3s ease-in-out;
+    font-size: 18px;
+    color:white;
+    text-decoration: none;
+}
+
+
+.welcomeHeadText{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: white;
+    font-size: 20px;
+}
+
+.welcomeHeadText > h3{
+    margin-top: 1rem;
+    font-size: 23px;
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    
+}
+
+.vlogo{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.vlogo > img{
+    width: 10rem;
+    cursor: pointer;
+
+}
+
+.cards{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    height: 40%;
+    flex-direction:row;
+}
+
+.orderCard, .orderProcessed, .orderdecline{
+    background: linear-gradient(to right, #1A237E,#9575CD);
+    width: 27%;
+    color: white;
+    height: 79%;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px 2px black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+.orderCard:hover, .orderProcessed:hover, .orderdecline:hover{
+    width: 28%;
+    height: 80%;
+    transition: 0.5s;
+    background: linear-gradient(to right bottom,#1A237E,#9575CD);
+
+}
+
+.orderCard > h3, .orderProcessed > h3, .orderdecline >h3{
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+}
+
+
+.orderCardBox{
+    margin-top: 2rem;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 2rem;
+
+}
+
+.in{
+    padding:0.2rem;
+    width: 70%;
+    margin-bottom: 2rem;
+    background: linear-gradient(to right bottom,#1A237E,#9575CD);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    box-shadow: 2px 2px 2px 2px black;
+    border-radius: 9px;
+    font-size: 18px;
+    font-family: 'Roboto Slab';
+    cursor: pointer;
+
+    
+}
+
+.in > div{
+    margin-left: 1rem;
+}
+
+.hbtn{
+    background: transparent;
+    outline: none !important;
+    border:none !important;
+    color: white;
+    font-size: 19px;
+
+}
+
+
+@media screen and (max-width:870px){
+
+
+    .dashlogo > img{
+        width: 18rem !important;
+        float: right;
+    }
+
+
+.hbtn{
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    outline: none !important;
+    border:none !important;
+    color: white;
+    font-size: 19px;
+
+}
+
+
+
+
+}
+

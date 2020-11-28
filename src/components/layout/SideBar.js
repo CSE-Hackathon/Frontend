@@ -13,7 +13,7 @@ const SideBar = ({history}) => {
   return (
     <Fragment>
     <div className="leftBar">
-      <div className="name"><h3>Generic</h3></div>
+      <div className="name"><h3>Labour Saathi</h3></div>
       <div className="dashboardBtn">
         <Link className="h" to='/dashboard'>
             Dashboard

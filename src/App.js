@@ -22,9 +22,9 @@ function App() {
       <section >
         <Switch>
           <Route exact path="/register" component={Register} />
-          <Route exact path="/dashboard" component={Dashboard} />
-          <Route exact path="/workers" component={Workers} />
-          <Route exact path="/:id" component={WorkerDetail} />
+          <PrivateRoute exact path="/dashboard" component={Dashboard} />
+          <PrivateRoute exact path="/workers" component={Workers} />
+          <PrivateRoute exact path="/:id" component={WorkerDetail} />
         </Switch>
       </section>
     </Fragment>

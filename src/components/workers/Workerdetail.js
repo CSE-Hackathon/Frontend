@@ -25,14 +25,19 @@ const WorkerDetail = ({match})=>{
     }
   },[])
  
-  const invite = async (no) => {
+  const invite =  (no) => {
     const name  = localStorage.getItem("name")
-    const body = `your have been invited by ${name} has to follow up more https://generic-codefury.herokuapp.com/`
-    const sms_url = `https://hackout-helpline.herokuapp.com/sendsms?body=${body}&number=${no}`
-    const response  = await axios.get(sms_url)
-    const call_url = ''
-  await axios.get(call_url)
+    const contractor_number = localStorage.getItem("Cnumber")
+    const body = `you have been invited by ${name} has to follow up more contact this number :${contractor_number} `
+    const sms_url = `http://135029ff9eb3.ngrok.io/sendsms?body=${body}&number=${no}`
+    const response  =  axios.get(sms_url)
     console.log(response.data)
+
+    const call_url = `http://135029ff9eb3.ngrok.io/makeACall?body=Hellow,${msg}&number=${no}&name=${name}`
+  
+    const response2 =  axios.get(call_url)
+    console.log(response2.data)
+
   }
 
   const handleChange = (e) =>{

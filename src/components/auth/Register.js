@@ -78,10 +78,11 @@ const RegisterRetailer = () => {
           headers: {
           'content-type': 'application/json'
         }}
-        const res  = await axios.post("http://14e6ee3eb7d4.ngrok.io/signup",registerData,config)
+        const res  = await axios.post("http://0a84f4f06b83.ngrok.io/signup",registerData,config)
         if(res.data.success === true){
           localStorage.setItem('log', true)
           localStorage.setItem('name', registerData.username)
+           localStorage.setItem("Cnumber",res.data.number)
           notify("Signed Up Successfully")
           setLoggedIn(true)
         }  
@@ -98,11 +99,12 @@ const RegisterRetailer = () => {
           headers: {
           'content-type': 'application/json'
         }}
-        const res  = await axios.post("http://14e6ee3eb7d4.ngrok.io/login",signInData,config)
+        const res  = await axios.post("http://0a84f4f06b83.ngrok.io/login",signInData,config)
         console.log(res)
         if(res.data.success === true){
           localStorage.setItem('log', true)
           localStorage.setItem("name",res.data.name)
+          localStorage.setItem("Cnumber",res.data.number)
           notify("Signed In Successfully")
           setLoggedIn(true)
         }  

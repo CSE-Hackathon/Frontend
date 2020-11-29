@@ -38,7 +38,7 @@ const Dashboardvendor = () => {
       <div className="cards">
         <div className="orderCard">
           <h3>Workers Near By </h3>
-          <h3>2</h3>
+          <h3>4</h3>
         </div>
         <div className="orderCard">
           <h3>Available</h3>

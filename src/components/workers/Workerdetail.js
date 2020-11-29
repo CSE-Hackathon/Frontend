@@ -63,7 +63,7 @@ const WorkerDetail = ({match})=>{
         <div><h1 className="tt">Gender : {worker.gender}</h1></div>
         <div><h1 className="tt">Phone Number: {worker.phone}</h1></div>
          <div className="msgbox">
-      http://0867a0f2f336.ngrok.io   <input className="msg" onChange={e => handleChange(e)} placeholder="Enter the Message to be conveyed ... " type="text"  />
+    <input className="msg" onChange={e => handleChange(e)} placeholder="Enter the Message to be conveyed ... " type="text"  />
 
          </div>
     <div onClick ={()=> invite(worker.phone)} className="dispatchBtn"><button id="ibtn">Invite</button></div> 

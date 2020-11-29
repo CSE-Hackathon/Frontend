@@ -8,7 +8,7 @@ const Landing = () => {
    <div className="outer">
       <div className="inner">
           <div className="welcomeText">
-          <h3>Hello!<br/> Welome to Labour Saathi</h3>
+          <h3>Hello!<br/> Welcome to Labour Saathi</h3>
           <img className="logo" src={logo} alt="Logo" />
           <div className="btns">
            <Link to="/register"><button className="for-vendor">Register</button></Link> 

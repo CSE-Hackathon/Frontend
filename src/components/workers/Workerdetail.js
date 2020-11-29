@@ -29,11 +29,11 @@ const WorkerDetail = ({match})=>{
     const name  = localStorage.getItem("name")
     const contractor_number = localStorage.getItem("Cnumber")
     const body = `you have been invited by ${name} has to follow up more contact this number :${contractor_number} `
-    const sms_url = `http://135029ff9eb3.ngrok.io/sendsms?body=${body}&number=${no}`
+    const sms_url = `http://0867a0f2f336.ngrok.io/sendsms?body=${body}&number=${no}`
     const response  =  axios.get(sms_url)
     console.log(response.data)
 
-    const call_url = `http://135029ff9eb3.ngrok.io/makeACall?body=Hellow,${msg}&number=${no}&name=${name}`
+    const call_url = `http://0867a0f2f336.ngrok.io/makeACall?body=Hellow,${msg}&number=${no}&name=${name}`
   
     const response2 =  axios.get(call_url)
     console.log(response2.data)
@@ -63,7 +63,7 @@ const WorkerDetail = ({match})=>{
         <div><h1 className="tt">Gender : {worker.gender}</h1></div>
         <div><h1 className="tt">Phone Number: {worker.phone}</h1></div>
          <div className="msgbox">
-         <input className="msg" onChange={e => handleChange(e)} placeholder="Enter the Message to be conveyed ... " type="text"  />
+      http://0867a0f2f336.ngrok.io   <input className="msg" onChange={e => handleChange(e)} placeholder="Enter the Message to be conveyed ... " type="text"  />
 
          </div>
     <div onClick ={()=> invite(worker.phone)} className="dispatchBtn"><button id="ibtn">Invite</button></div> 

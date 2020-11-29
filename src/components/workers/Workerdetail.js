@@ -38,6 +38,12 @@ const WorkerDetail = ({match})=>{
     const response2 =  axios.get(call_url)
     console.log(response2.data)
 
+    document.getElementById('ibtn').innerHTML = 'Invited'
+
+    
+
+
+
   }
 
   const handleChange = (e) =>{
@@ -60,7 +66,7 @@ const WorkerDetail = ({match})=>{
          <input className="msg" onChange={e => handleChange(e)} placeholder="Enter the Message to be conveyed ... " type="text"  />
 
          </div>
-    <div onClick ={()=> invite(worker.phone)} className="dispatchBtn"><button>Invite</button></div> 
+    <div onClick ={()=> invite(worker.phone)} className="dispatchBtn"><button id="ibtn">Invite</button></div> 
    
   </div>
       

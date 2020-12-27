@@ -29,11 +29,11 @@ const WorkerDetail = ({match})=>{
     const name  = localStorage.getItem("name")
     const contractor_number = localStorage.getItem("Cnumber")
     const body = `you have been invited by ${name} has to follow up more contact this number :${contractor_number} `
-    const sms_url = `http://0867a0f2f336.ngrok.io/sendsms?body=${body}&number=${no}`
+    const sms_url = `http://ec878034b63a.ngrok.io/sendsms?body=${body}&number=${no}`
     const response  =  axios.get(sms_url)
     console.log(response.data)
 
-    const call_url = `http://0867a0f2f336.ngrok.io/makeACall?body=Hellow,${msg}&number=${no}&name=${name}`
+    const call_url = `http://ec878034b63a.ngrok.io/makeACall?body=Hellow,${msg}&number=${no}&name=${name}`
   
     const response2 =  axios.get(call_url)
     console.log(response2.data)
